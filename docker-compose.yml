@@ -1,0 +1,10 @@
+services:
+  nodejs:
+    build: ./work
+    container_name: NODEJS
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./work:/work
+    ports:
+      - '3000:3000'
